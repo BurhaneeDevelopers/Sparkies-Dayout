@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mario-game-Shishya</title>
+    <link rel="stylesheet" href="/Content/start.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;1,400;1,400&family=Odibee+Sans&family=Raleway:wght@300&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+     <!-- -------help modal start------ -->
+  <div class="modal fade" id="helpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog  modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- -------help Form---- -->
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Email here">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Enter your problem</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <!-- -------help Form---- -->
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Send feedback</button>
+        </div>
+    </div>
+</div>
+</div>
+<!-- -------help modal end------ -->
+    <div class="d-flex justify-content-center flex-column bg-img">
+        <div class=" mx-auto">
+            <h1 class="">Alright Sparky Lets Jump Into The Game </h1>
+        </div>
+
+        <div class="options mx-auto ">
+            <button class="btn bg-btn"><a href="start.html"><b> Play</b></a></but>
+            <button class="btn bg-btn" data-bs-toggle="modal" data-bs-target="#helpModal"><a href=""><b> Help</b></a></but>
+            <button class="btn bg-btn" data-bs-toggle="modal" data-bs-target="#copyrightModal"><a href=""><b> Copyright</b></a></but>
+            <button class="btn bg-btn"  data-bs-toggle="tooltip" data-bs-placement="top"
+            data-bs-custom-class="custom-tooltip"
+            title="Coming Soon..."><a href=""><b> More Games</b></a></but>
+        </div>
+    </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="copyrightModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <!-- ----copyright start---- -->
+          Super Mario Bros. was released in 1985, and has since been under copyright. In the case of a corporation such as Nintendo, the term of copyright is for the shorter of 120 years from creation or 95 years from publication. In this instance, Nintendo hold copyright over the game, and therefore Mario himself, until 2080. Hence we CodeSamshers have used the idea of mario for just for practice and competition purpose
+          <!-- ----copyright end---- -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Okay</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+
+</html>
